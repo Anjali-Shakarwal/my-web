@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+*{
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg {
+  background-color: #1E1E1E
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text_color {
+  color: #c2c2c2;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.max_w224 {
+  max-width: 224px;
 }
-
-.App-link {
-  color: #61dafb;
+.max_w290 {
+  max-width: 290px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.max_w217 {
+  max-width: 217px;
+}
+.max_w421 {
+  max-width: 421px;
+}
+.box_box {
+  background: #1E1E1E;
+  padding: 20px;
+  transition: all .1s linear;
+}
+.box_box:hover {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+.white_ball {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  opacity: 0;
+}
+.position-relative:hover .white_ball {
+  opacity: 1 !important;
+}
+.gredient_card {
+  width: 421px;
+  position: relative;
+  border: 4px solid transparent;
+  border-radius: 16px;
+  background: linear-gradient(to bottom right, #484848, #2c2c2c);
+  background-clip: padding-box;
+  padding: 10px; 
+  padding: 14px 106px 64px 30px;
+}
+.gredient_card::after {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  background: linear-gradient(to bottom, #FF7DFA, #FD00F3, #22A2FF, #22A2FF);
+  content: '';
+  z-index: -1;
+  border-radius: 16px;
+}
+.z_index{
+  z-index: 1;
+  position: sticky;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(../src/assets/fonts/source-sans-pro.black.ttf);
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(../src/assets/fonts/source-sans-pro.semibold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+h2{
+  font-family: 'Source Sans Pro';
+  font-weight: 900;
+}
+.p1{
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
 }
